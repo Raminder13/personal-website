@@ -40,3 +40,58 @@ nav a {
 nav a:hover {
   color: #000;
 }
+
+.banner {
+  background-image: url("banner-image.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black background */
+}
+
+.banner h1 {
+  font-size: 72px;
+  margin: 0;
+  text-shadow: 2px 2px #000;
+  text-align: center;
+  animation-name: bounce; /* apply the bounce animation */
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+section p {
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+  max-width: 800px;
+}
